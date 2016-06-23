@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cine</title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/cine.css">
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAlZL-fdVlH72er-OBqtwS2pU-a_GVDdo&callback=initMap"
+       async defer></script>
+	
+</head>
+<body>
+<header class="container"><h1>Cine Location</h1></header>
+<div class="container">
+<form class="form-inline" role="form">
+  <div class="form-group">
+    <label for="cinema">Cinema:</label>
+    <input type="cinema" class="form-control" id="cinema">
+  </div>
+  <div class="form-group">
+    <label for="lat">Latitude:</label>
+    <input type="lat" class="form-control" id="lat">
+  </div>
+  <div class="form-group">
+    <label for="lon">Longitude:</label>
+    <input type="lon" class="form-control" id="lon">
+  </div>
+  <button type="submit" id="save_cinema" class="btn btn-primary">Submit</button>
+</form>
+</div>
+<div class="container" id="map"></div>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="js/cine.js"></script>	
+</body>
+</html>
